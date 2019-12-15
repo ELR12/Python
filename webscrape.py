@@ -21,7 +21,7 @@ with open('monitorPrices.csv', 'w') as csv_file:    #write to csv
 	csv_writer.writerow(fileHeaders)
 
 	#loop through pages 1 - 3 of the website and scrape data
-	for i in range(1, 3):
+	for i in range(1, 4):
 		url = 'https://www.newegg.com/p/pl?N=100160979%20600557170%20601305587&page={}'.format(i)
 		response = requests.get(url)  # must read 200 which means successfully connected to website
 		src = response.content  #contains the source-code of the website
