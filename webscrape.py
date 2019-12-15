@@ -9,10 +9,10 @@ from bs4 import BeautifulSoup
 from csv import writer
 
 
-url = 'https://www.newegg.com/p/pl?N=100160979%20600557170%20601305587&page=1'
-response = requests.get(url)  # must read 200 which means successfully connected to website
-src = response.content  #contains the source-code of the website
-soup = BeautifulSoup(src, 'html.parser') 
+#url = 'https://www.newegg.com/p/pl?N=100160979%20600557170%20601305587&page=1'
+#response = requests.get(url)  # must read 200 which means successfully connected to website
+#src = response.content  #contains the source-code of the website
+#soup = BeautifulSoup(src, 'html.parser') 
 
 
 with open('monitorPrices.csv', 'w') as csv_file:    #write to csv
